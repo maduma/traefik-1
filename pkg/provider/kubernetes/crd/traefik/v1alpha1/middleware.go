@@ -87,6 +87,7 @@ type DigestAuth struct {
 type ForwardAuth struct {
 	Address                  string     `json:"address,omitempty"`
 	TrustForwardHeader       bool       `json:"trustForwardHeader,omitempty"`
+	AppendURIToAddress       bool       `json:"appendURIToAddress,omitempty"`
 	AuthResponseHeaders      []string   `json:"authResponseHeaders,omitempty"`
 	AuthResponseHeadersRegex string     `json:"authResponseHeadersRegex,omitempty"`
 	AuthRequestHeaders       []string   `json:"authRequestHeaders,omitempty"`
